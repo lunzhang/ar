@@ -2,18 +2,15 @@
 <html>
 <head>
   <title>AR</title>
-  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded artoolkit='sourceType: webcam;'>
-
     <a-assets>
       <a-asset-item id="heart" src="./heart.dae"></a-asset-item>
     </a-assets>
-
     <a-collada-model src="#heart" rotation='0 0 0'scale='.025 .025 .025'></a-collada-model>
-
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
 </body>
